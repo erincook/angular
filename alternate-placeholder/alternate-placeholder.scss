@@ -1,0 +1,44 @@
+.alternate-placeholder {
+	position: relative;
+	visibility: hidden;
+	margin-bottom: 12px;
+
+	legend {
+		position: absolute;
+		top: -7px;
+		width: auto;
+
+		margin-left: 10px;
+		padding-left: 4px;
+		padding-right: 4px;
+
+		border: none;
+		font-size: 12px;
+		line-height: 12px;
+		background-color: #FFF;
+
+		label {
+			font-weight: normal;
+			margin-bottom: 0;
+		  z-index: 1000;
+		  position: relative;
+		}
+	}
+
+	.form-control-wrapper, .form-control-select {
+		visibility: visible;
+	}
+
+	input[type='email'], input[type='password'], input[type='text'], select, .geo-icon {
+		outline: none;
+		box-shadow: none;
+		visibility: visible;
+	}
+
+	&.alt-placeholder-show {
+		visibility: visible;
+	}
+}
+.alternate-placeholder.profile-field{
+  margin-bottom: 20px;
+}
