@@ -1,0 +1,27 @@
+ <!-- Email -->
+                <div alternate-placeholder="{{user.email}}" class="gap-vertical-2x">
+                    <input id="email"
+                           type="email"
+                           data-valid-email
+                           name="email"
+                           tabindex="1"
+                           data-ng-class="{submitted:loginForm.submitted || loginForm.email.$touched}"
+                           data-ng-model="user.email"
+                           data-ng-model-options="{ updateOn: 'blur' }"
+                           class="form-control"
+                           placeholder="Email"
+                           required/>
+                </div>
+
+                <!-- Password -->
+                <div alternate-placeholder="{{user.password}}">
+                    <input id="password"
+                           type="password"
+                           name="password"
+                           tabindex="2"
+                           data-ng-model="user.password"
+                           data-ng-model-options="{ updateOn: 'blur' }"
+                           class="form-control"
+                           placeholder='Password'
+                           required/>
+                </div>
